@@ -1,3 +1,5 @@
+/* Css global */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +13,8 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
+/* Css barra de navegação */
 
 .barra-navegacao {
     position: fixed;
@@ -50,11 +54,13 @@ li a:hover {
     color: #F4C031;
 }    
 
-.pg1 {
+/* Css pagina home */
+
+.pagina-home {
     background-color: #131313;
 }    
 
-.container1 {
+.container-pagina {
     padding: 1% 5% 0% 5%;
 }        
 
@@ -73,9 +79,11 @@ li a:hover {
     border-radius: 100%;
     float: right;
     margin-right: 5rem;
-}            
+}
 
-.pg2 {
+/* Css pagina informação */
+
+.pagina-informacao {
     background-color: #313438;
     padding-top: 10.5rem;
     padding-bottom: 5rem;
@@ -86,6 +94,7 @@ li a:hover {
     padding: 1% 5% 5% 5%;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .item-curriculo {
@@ -95,6 +104,8 @@ li a:hover {
 .titulos {
     color: #F4C031;
 }
+
+/* Css Botão */
 
 .cv {
     padding: 12px 24px;
@@ -109,7 +120,9 @@ li a:hover {
 .cv:hover {
     opacity: 0.8;
     transition: color 0.2s;
-}        
+}
+
+/* Css icones */
 
 .bi-arrow-down-circle-fill {
     width: 8%;
@@ -130,4 +143,64 @@ li a:hover {
 .bi-whatsapp {
     width: 10%;
     margin: 0% 5% 3% 0%;
-}    
+}
+
+/* ----------------------------------------------------------- Css responsividade ------------------------------------------------------------- */
+
+@media only screen and (max-width: 1079px) {
+    .logo {
+        width: 120px;
+        float: none;
+    }
+
+    .curriculo {
+        text-align: none;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .item-curriculo {
+        margin: 0;
+        padding: 0;
+        font-size: 20%;
+        width: 50%;
+    }
+
+    .cv {
+        margin-top: 10rem;
+        padding: 0.5rem;
+        position:absolute;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        max-width: 50%;
+        font-size: 1rem;
+    }
+
+    .bi-arrow-down-circle-fill {
+        display: none;
+    }
+
+    .bi-card-list {
+        float: none;
+        margin: 0% 5% 3% 0%;
+    }
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1544px) {
+    .bi-arrow-down-circle-fill {
+        display: none;
+    }
+
+    .item-curriculo {
+        width: 30%;
+    }
+
+    .bi-card-list {
+        float: none;
+        margin: 0% 5% 3% 0%;
+    }
+}
