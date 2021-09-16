@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans, sans-serif;
+    font-size: 20px;
+    color: #ffffe0;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.barra-navegacao {
+    position: fixed;
+    width: 100%;
+    background-color: #131313;
+}
+
+.logo {
+    width: 8%;
+    float: left;
+    padding: 0;
+}
+
+.link {
+    display: flex;
+    padding-top: 1rem;
+    text-align: center;
+    color: #ffffe0;
+    padding-right: 16px;
+    text-decoration: none;
+
+    transition: color 0.2s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 1% 5% 1% 5%;
+    margin: 0;
+    overflow: hidden;
+}
+  
+li {
+    float: right;
+}
+  
+li a:hover {
+    color: #F4C031;
+}    
+
+.pg1 {
+    background-color: #131313;
+}    
+
+.container1 {
+    padding: 1% 5% 0% 5%;
+}        
+
+.row {
+    align-items: center;
+    margin-top: 8rem;
+    padding-bottom: 11.5rem;
+}        
+
+.nome {
+    color: #F4C031;
+}
+
+.foto-thiago {
+    width: 50%;
+    border-radius: 100%;
+    float: right;
+    margin-right: 5rem;
+}            
+
+.pg2 {
+    background-color: #313438;
+    padding-top: 10.5rem;
+    padding-bottom: 5rem;
+}    
+
+.curriculo {
+    text-align: center;
+    padding: 1% 5% 5% 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-curriculo {
+    width: 20%;
+}
+
+.titulos {
+    color: #F4C031;
+}
+
+.cv {
+    padding: 12px 24px;
+    border-radius: 3px;
+    border: 0;
+    text-align: center;
+    background-color: #F4C031;
+    color: #131313;
+    font-size: 21px;
+}        
+
+.cv:hover {
+    opacity: 0.8;
+    transition: color 0.2s;
+}        
+
+.bi-arrow-down-circle-fill {
+    width: 8%;
+    margin: 0% 5% 1% 0%;
+}    
+
+.bi-book {
+    width: 11%;
+    margin: 0% 5% 2% 0%;
+}    
+
+.bi-card-list {
+    width: 11%;
+    margin-top: 2%;
+    float: left;
+}    
+
+.bi-whatsapp {
+    width: 10%;
+    margin: 0% 5% 3% 0%;
+}    
